@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 public class AccountBank {
 	private Cliente cliente;
 	private String AccountNumber;
@@ -14,6 +16,19 @@ public class AccountBank {
 	public String toString() {
 		return "AccountBank [cliente=" + cliente + ", AccountNumber=" + AccountNumber + ", Saldo=" + Saldo + "]";
 	}
+
+	public void Depositar(int monto) {
+		if(monto >= 0 )
+		Saldo += monto;
+		else{
+			JOptionPane.showConfirmDialog(null, "no se puede depositar, saldo incorrecto");
+		}
+		
+	}
+
+    public Object getSaldo() {
+        return Saldo;
+    }
 	
 	
 	

@@ -12,7 +12,12 @@ public class Cliente {
 	}
 	
 	
-	
+	public void AgregarCliente(String nombre, String dni){
+		this.nombre = nombre;
+        this.dni = dni;
+
+	}
+
 	
 
 
